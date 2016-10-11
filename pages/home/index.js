@@ -12,7 +12,8 @@ import React, { PropTypes } from 'react';
 import Layout from '../../components/Layout';
 import Login from './login.js';
 import s from './styles.css';
-import logo from './logo.png';
+import monster from './monster.gif';
+import logo from './d66.png';
 import { title, html } from './index.md';
 
 class HomePage extends React.Component {
@@ -29,6 +30,7 @@ class HomePage extends React.Component {
     return (
       <Layout className={s.content}>
         <div dangerouslySetInnerHTML={{ __html: html }} />
+        <img className={s.monster} src={monster} role="presentation" />
         <img className={s.logo} src={logo} role="presentation" />
         <Login />
       </Layout>

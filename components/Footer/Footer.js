@@ -14,6 +14,7 @@ import Link from '../Link';
 function Footer() {
   return (
     <footer className="">
+      
     </footer>
   );
 }

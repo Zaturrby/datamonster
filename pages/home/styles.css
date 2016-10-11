@@ -8,17 +8,32 @@
  * LICENSE.txt file in the root directory of this source tree.
  */
 
-@media screen and (max-width: 1024px) {
+.content {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60rem;
+  max-width: 100%;
+  padding: 5rem;
+}
 
-  .content {
-    padding: 0 16px;
-  }
-
+.monster {
+  position: relative;
+  top: 5rem;
+  left: -12rem;
+  width: 50%;
 }
 
 .logo {
-  width: 30rem;
+  position: relative;
+  width: 100%;
   max-width: 80%;
+}
+
+.loginBox {
+  width: 100%;
 }
 
 .login {
@@ -26,7 +41,11 @@
   align-items: center;
   justify-content: center;
   padding: 2rem;
-  margin: 2rem;
+  margin: 2rem 0;
   background: rgba(27,167, 64, 1);
   color: white;
+}
+
+.dataBox {
+ overflow-x: scroll;
 }

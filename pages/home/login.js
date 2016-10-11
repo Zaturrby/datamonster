@@ -48,9 +48,9 @@ export default class Login extends React.Component {
 
   render() {
     return (
-      <div className="login-box">
+      <div className={s.loginBox}>
         <a className={s.login} onClick={this.showLock}>Feed me!</a>
-        <pre><code>{beautify(this.state.profiles, null, 2, 100)}</code></pre>
+        <pre className={s.dataBox}><code>{beautify(this.state.profiles, null, 2, 60)}</code></pre>
       </div>);
   }
 }
