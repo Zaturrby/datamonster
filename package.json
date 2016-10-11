@@ -7,10 +7,14 @@
     "npm": ">=3.8"
   },
   "dependencies": {
+    "auth0-lock": "^10.4.0",
     "babel-polyfill": "^6.9.1",
     "classnames": "^2.2.5",
+    "facebook-node-sdk": "^0.2.0",
     "fastclick": "^1.0.6",
     "history": "^3.0.0",
+    "json-beautify": "^1.0.1",
+    "passport": "^0.3.2",
     "react": "^15.2.1",
     "react-dom": "^15.2.1",
     "react-mdl": "^1.6.1",
@@ -64,6 +68,7 @@
     "postcss-nesting": "^2.3.1",
     "postcss-selector-matches": "^2.0.1",
     "postcss-selector-not": "^2.0.0",
+    "react-bootstrap": "^0.30.5",
     "react-hot-loader": "^3.0.0-beta.2",
     "s3": "^4.4.0",
     "style-loader": "^0.13.1",

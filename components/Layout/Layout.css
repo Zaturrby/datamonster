@@ -8,8 +8,15 @@
  * LICENSE.txt file in the root directory of this source tree.
  */
 
+.app {
+  display: flex;
+  width: 100vw;
+  min-height: 100vh;
+  background: white;
+  justify-content: center;
+  padding-top: 20rem;
+}
+
 .content {
-  margin: 0 auto;
-  max-width: 1000px;
-  width: 100%;
+
 }
