@@ -111,6 +111,6 @@
     "publish": "node run publish",
     "publish:debug": "node run publish --debug",
     "start": "node run",
-    "deploy": "npm run build && gh-pages -d public"
+    "deploy": "npm run build && cp CNAME public/CNAME && gh-pages -d public"
   }
 }
