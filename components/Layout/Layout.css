@@ -28,3 +28,9 @@
   max-width: 55rem;
   padding: 0 5rem 10rem;
 }
+
+@media (min-width: 0px) and (max-width: 600px) {
+  .content {
+    padding: 0 2rem 10rem;
+  }
+}
