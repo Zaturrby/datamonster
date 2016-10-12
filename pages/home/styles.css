@@ -19,6 +19,12 @@
   padding: 0 5rem 10rem;
 }
 
+@media (min-width: 0px) and (max-width: 600px) {
+  .content {
+    padding: 0 2rem 10rem;
+  }
+}
+
 .monster {
   position: relative;
   top: 3%;
@@ -58,6 +64,7 @@
 .login {
   display:flex;
   justify-content: center;
+  align-items: center;
   box-sizing: border-box;
   padding: 2rem;
   width: 100%;
@@ -76,10 +83,18 @@
   border: 2px solid rgba(27,167, 64, 1);
 }
 
+@media (min-width: 0px) and (max-width: 600px) {
+  .dataBox {
+    padding: 2rem 0;
+    border: none;
+  }
+}
+
 .button {
   display:flex;
   justify-content: center;
   box-sizing: border-box;
+  align-items: center;
   padding: 2rem;
   width: 100%;
   margin: 2rem 0;
