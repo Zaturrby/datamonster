@@ -14,9 +14,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-grow: 1;
-  max-width: 60rem;
-  padding: 5rem;
+  width: 100%;
+  max-width: 55rem;
+  padding: 0 5rem 10rem;
 }
 
 .monster {
@@ -24,27 +24,65 @@
   top: 3%;
   left: -40%;
   width: 50%;
+  z-index: 20;
 }
 
 .logo {
   position: relative;
   width: 100%;
+  z-index: 30;
+}
+
+.matrixContainer {
+  position: relative;
+  width:100%;
+}
+
+.matrix {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 0;
+  z-index: 10;
 }
 
 .loginBox {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
   width: 100%;
 }
 
 .login {
-  display: flex;
-  align-items: center;
+  display:flex;
   justify-content: center;
+  box-sizing: border-box;
   padding: 2rem;
+  width: 100%;
   margin: 2rem 0;
   background: rgba(27,167, 64, 1);
   color: white;
+  flex: 1;
 }
 
 .dataBox {
- overflow-x: scroll;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 2rem;
+  white-space: pre-wrap;
+  overflow-x: scroll;
+  border: 2px solid rgba(27,167, 64, 1);
+}
+
+.button {
+  display:flex;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 2rem;
+  width: 100%;
+  margin: 2rem 0;
+  background: rgba(27,167, 64, 1);
+  color: white;
 }

@@ -19,5 +19,12 @@
 }
 
 .content {
-
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 55rem;
+  padding: 0 5rem 10rem;
 }

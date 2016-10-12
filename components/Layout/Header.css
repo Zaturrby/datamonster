@@ -8,24 +8,41 @@
 * LICENSE.txt file in the root directory of this source tree.
 */
 
-.row {
-  padding: 40px;
+
+.header {
+  position: relative;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 55rem;
 }
 
-.title {
-  color: #fff;
-  text-decoration: none;
+.monster {
+  position: relative;
+  top: 3rem;
+  left: -27%;
+  width: 50%;
+  z-index: 20;
 }
 
-@media screen and (max-width: 1024px) {
+.logo {
+  position: relative;
+  width: 100%;
+  z-index: 30;
+}
 
-  .header {
-    display: flex;
-    background: white;
-  }
+.matrixContainer {
+  position: relative;
+  width:100%;
+}
 
-  .row {
-    padding: 0 16px;
-  }
-
+.matrix {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 0;
+  z-index: 10;
 }

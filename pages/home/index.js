@@ -10,10 +10,11 @@
 
 import React, { PropTypes } from 'react';
 import Layout from '../../components/Layout';
+import Header from '../../components/Layout/Header.js';
 import Login from './login.js';
+import Link from '../../components/Link';
 import s from './styles.css';
-import monster from './monster.gif';
-import logo from './d66.png';
+
 import { title, html } from './index.md';
 
 class HomePage extends React.Component {
@@ -29,10 +30,9 @@ class HomePage extends React.Component {
   render() {
     return (
       <Layout className={s.content}>
-        <div dangerouslySetInnerHTML={{ __html: html }} />
-        <img className={s.monster} src={monster} role="presentation" />
-        <img className={s.logo} src={logo} role="presentation" />
+        <Header />
         <Login />
+        <Link className={s.button} to="/about/">Over ons!</Link>
       </Layout>
     );
   }

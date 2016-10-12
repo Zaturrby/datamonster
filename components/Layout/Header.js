@@ -13,6 +13,10 @@ import Navigation from './Navigation';
 import Link from '../Link';
 import s from './Header.css';
 
+import monster from './monster.gif';
+import logo from './d66.png';
+import matrix from './matrix.png';
+
 class Header extends React.Component {
 
   componentDidMount() {
@@ -25,8 +29,12 @@ class Header extends React.Component {
 
   render() {
     return (
-      <header ref={node => (this.root = node)}>
-
+      <header className={s.header} ref={node => (this.root = node)}>
+        <img className={s.monster} src={monster} role="presentation" />
+        <div className={s.matrixContainer}>
+          <img className={s.matrix} src={matrix} role="presentation" />
+        </div>
+        <img className={s.logo} src={logo} role="presentation" />
       </header>
     );
   }
