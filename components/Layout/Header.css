@@ -17,14 +17,7 @@
   flex-direction: column;
   width: 100%;
   max-width: 55rem;
-}
-
-.monster {
-  position: relative;
-  top: 3rem;
-  left: -27%;
-  width: 50%;
-  z-index: 20;
+  padding-top: 5rem;
 }
 
 .logo {

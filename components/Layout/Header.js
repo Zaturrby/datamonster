@@ -30,11 +30,7 @@ class Header extends React.Component {
   render() {
     return (
       <header className={s.header} ref={node => (this.root = node)}>
-        <img className={s.monster} src={monster} role="presentation" />
-        <div className={s.matrixContainer}>
-          <img className={s.matrix} src={matrix} role="presentation" />
-        </div>
-        <img className={s.logo} src={logo} role="presentation" />
+        {/* <img className={s.logo} src={logo} role="presentation" /> */}
       </header>
     );
   }

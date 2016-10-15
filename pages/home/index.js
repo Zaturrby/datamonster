@@ -31,8 +31,9 @@ class HomePage extends React.Component {
     return (
       <Layout className={s.content}>
         <Header />
+        <h1> {title} </h1>
+        <div dangerouslySetInnerHTML={{ __html: html }} />
         <Login />
-        <Link className={s.button} to="/about/">Over ons!</Link>
       </Layout>
     );
   }
