@@ -13,6 +13,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const AssetsPlugin = require('assets-webpack-plugin');
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 const pkg = require('./package.json');
 
 const isDebug = global.DEBUG === false ? false : !process.argv.includes('--release');
@@ -82,6 +83,7 @@ const config = {
       filename: 'assets.json',
       prettyPrint: true,
     }),
+    new FaviconsWebpackPlugin('./components/Layout/d66.png'),
   ],
 
   // Options affecting the normal modules
