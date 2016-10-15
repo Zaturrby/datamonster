@@ -72,7 +72,9 @@ export default class Login extends React.Component {
   render() {
     return (
       <div className={s.loginBox}>
-        <a className={s.login} onClick={this.showLock}>Aanmelden</a>
+        <a className={s.login} onClick={this.showLock}>
+          {(this.state.profiles.length === 0) ? 'Aanmelden' : 'Bedankt!'}
+        </a>
         {this.props.viewer &&
           <pre className={s.dataBox}>
             <code>{beautify(this.state.profiles, null, 2, 60)}</code>
