@@ -34,6 +34,7 @@ class HomePage extends React.Component {
         <h1> {title} </h1>
         <div dangerouslySetInnerHTML={{ __html: html }} />
         <Login />
+        {/* <Link className={s.button} to="/about/">About!</Link> */}
       </Layout>
     );
   }
